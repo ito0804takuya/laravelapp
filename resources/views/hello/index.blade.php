@@ -1,7 +1,11 @@
 <html>
   <body>
     <h1>Index</h1>
-    <p><?php echo $msg; ?></p>
-    <p><?php echo $id; ?></p>
+    <p>{{ $msg }}</p>
+    <form method="POST" action="/hello">
+      @csrf
+      <input type="text" name="msg">
+      <input type="submit">
+    </form>
   </body>
 </html>
