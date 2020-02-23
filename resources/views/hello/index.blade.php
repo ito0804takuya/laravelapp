@@ -1,14 +1,9 @@
 <html>
   <body>
     <h1>Index</h1>
-    
-    
-    <ol>
-    @foreach($data as $item)
-    <li>{{ $item }}
-    @endforeach
-    
-    </ol>
 
+    <p>'message" = {{ $message }}</p>
+    <p>'view_message" = {{ $view_message }}</p>
+    
   </body>
 </html>
