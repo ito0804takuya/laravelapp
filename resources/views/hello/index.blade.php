@@ -2,8 +2,11 @@
   <body>
     <h1>Index</h1>
 
-    <p>'message" = {{ $message }}</p>
-    <p>'view_message" = {{ $view_message }}</p>
+  <table>
+  @foreach($data as $item)
+  <tr><th>{{ $item['name'] }}</th><td>{{ $item['mail']}}</td></tr>
+  @endforeach
+  </table>
     
   </body>
 </html>
